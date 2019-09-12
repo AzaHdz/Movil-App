@@ -1,0 +1,177 @@
+/* Cambio toda la fuente de la pagina */
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat-Bold";
+}
+
+h1 {
+  font-size: 3.5rem;
+  /* line-height: 1.5; */
+  font-weight: bold;
+  /* color: white; */
+}
+
+p {
+  color: #8f8f8f;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Section white and color agrpamos todas las secciones en las que son de color blanco y de otro color */
+.color-section {
+  background: #ff4c68;
+  color: #fff;
+}
+.white-section {
+  background-color: #fff;
+}
+
+
+/* Navigation Bar */
+/* incremento el espacio entre la barra de navegacion y el contenido inferior */
+/* ademas de alinear el texto quitando el espacio de arriba derecha e izquierda */
+.navbar {
+  padding: 0 0 2.5rem;
+}
+/* Cambio la fuente que corresponde a la marca TinDog */
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* incremento el espacio entre los elementos de la barra de navegacion de la derecha */
+.nav-item {
+  padding: 0 0 18px 0;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light"
+}
+
+
+/* title section */
+#title {
+  text-align: left;
+}
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
+/* Download buttons */
+/* Añado un margen para separar los botones del resto de contenido arriba derecha izquierda abajo */
+.download-buttons {
+  margin: 5% 3%;
+}
+/* tilte image */
+/* Utilizo esta clase para editar la imagen, en ancho y rotarla 25 en sentido horario */
+/* la imagen se posiciona debajo de la seccion features por lo tanto se ve cortada */
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
+}
+
+/* Features */
+/* incremento espacio entre la seccion y el resto de contenido ademas de darle una posicio sobre la imagen */
+#features {
+  position: relative;
+}
+.features-tite {
+  font-size: 1.5rem;
+}
+.col-lg-4 {
+  margin-bottom: 3%;
+}
+/* Edito el color en los iconos y añado un margen de espacio arriba y abajo */
+.fas {
+  color: #ef8172;
+  margin-bottom: 3%;
+}
+/* los iconos cambian de color al pasar el cursor sobre ellos */
+.fas:hover {
+  color: #ff4c68;
+}
+
+
+/* testimonials section */
+#testimonials {
+  background-color: #ef8172;
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.person {
+  font-family: "Montserrat-light"
+}
+/* asigno un formato circular a la imagen, la reduzo a un 15% de su tamaño original */
+.testimonial-image {
+  border-radius: 100%;
+  width: 15%;
+  margin: 20px;
+}
+
+
+/* press section */
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+}
+/* edito el tamaño y el espacio entre logo */
+.press-logo {
+  width: 15%;
+  padding: 20px 20px 50px;
+}
+
+
+/* pricing section */
+#pricing {
+  padding: 100px;
+}
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* separo cada elemento de los precios del resto de contenido */
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* utilizo query breakpoints para modificar la estructura del titulo y la posicion de la imagen  */
+/* para una pantalla menor a 1000 px se aplica lo siguiente */
+@media(max-width: 1000px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+
+/* call to action section */
+.cta-title {
+  font-family: "Montserrat-Black";
+  color: #fff;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+
+/* footer section  */
+.icons-footer {
+  margin: 0 10px 20px;
+}
